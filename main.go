@@ -71,7 +71,7 @@ func rotate() {
 		// List of Slack error responses: https://api.slack.com/methods/usergroups.users.list
 		switch {
 		case err.Error() == "no_such_subteam":
-			// TODO: finish create usergroup functionality (need function to create the usergroup)
+			// TODO[1]: finish create usergroup functionality (need function to create the usergroup)
 			slackClient.CreateUserGroup(userGroup)
 		default:
 			check(err, "Could not get group members")
